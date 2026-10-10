@@ -8,3 +8,13 @@
 .gallery-grid{grid-template-columns:minmax(0,1.2fr) minmax(0,1fr)}
 .gallery-item{width:100%;min-width:0}
 @media(max-width:600px){.gallery-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
+/* Detailed responsibilities retain the existing editorial type, rules and spacing. */
+.overview .detail-meta{margin-top:0}
+.detail-meta small{font-size:11px;color:#74796c}
+.responsibilities{padding:25px 0;border-top:1px solid var(--line)}
+.responsibilities p{font-size:13px;color:#74796c;margin-top:12px}
+.action ul{padding-left:16px;margin:10px 0 0;color:#73786a;font-size:12px;line-height:1.9;word-break:keep-all}
+.action li+li{margin-top:9px}
+.result .metrics{margin-top:30px;border-color:#c4c9b6}
+.gallery-intro{font-size:12px;color:#74796c;margin-top:22px}
+@media(max-width:600px){.result .metrics{gap:20px}.result .metrics strong{font-size:34px}.result .team-metrics>div:first-child strong{font-size:9vw}.result .team-metrics>div+div strong{font-size:30px}.responsibilities p{font-size:12px}.action li+li{margin-top:10px}}
