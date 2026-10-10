@@ -18,3 +18,15 @@
 .result .metrics{margin-top:30px;border-color:#c4c9b6}
 .gallery-intro{font-size:12px;color:#74796c;margin-top:22px}
 @media(max-width:600px){.result .metrics{gap:20px}.result .metrics strong{font-size:34px}.result .team-metrics>div:first-child strong{font-size:9vw}.result .team-metrics>div+div strong{font-size:30px}.responsibilities p{font-size:12px}.action li+li{margin-top:10px}}
+/* Visible project links fit the existing caption column without changing the grid. */
+.work{cursor:pointer}
+.work-year>.project-link{display:block;margin-top:18px;font-size:10px;font-weight:500;line-height:1.8;letter-spacing:.025em;color:#42483a;border-bottom:1px solid #858678;padding-bottom:4px;transform:none}
+.project-arrow{display:inline-block;transition:transform 250ms ease}
+.work:hover .work-year>.project-link{transform:none}
+.works-hint{display:block;font-size:9px;letter-spacing:.07em;font-weight:500;margin-top:12px;color:#565c4d}
+.work .media{transition:transform 250ms ease}
+.work-visual{overflow:hidden}
+@media(hover:hover) and (pointer:fine){.work:hover .media{transform:scale(1.008)}.work:hover .project-arrow{transform:translate(2px,-2px)}}
+.work:focus-visible .project-arrow{transform:translate(2px,-2px)}
+@media(max-width:600px){.work-year>.project-link{font-size:10px}.works-hint{font-size:8px;max-width:130px}}
+@media(prefers-reduced-motion:reduce){.work:hover .media,.work:hover .project-arrow,.work:focus-visible .project-arrow{transform:none}}
